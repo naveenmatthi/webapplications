@@ -1,0 +1,30 @@
+"stuid";"courseid";"attendancepercentage"
+"162034009";"023";"82"
+"182034009";"123";"92"
+"courseid";"name";"specified to";"facultyid"
+"023";"c language";"BTech";
+"024";"java";"BTech";"456910"
+"025";"iot";"BTech";
+"026";"cloud computing";"BTech";
+"027";"artifical intilengen";"BTech";
+"028";"computer networks";"BTech";
+"123";"df";"MTech";
+"124";"malware analysis";"MTech";
+"125";"infracture attacks";"MTech";
+"126";"cryptography attacks";"MTech";
+"127";"scada";"MTech";
+"128";"software security";"MTech";
+"departmants present"
+"id";"surname";"firstname";"lastname";"date of birth";"gender";"degree";"joiningdate";"address";"username"
+"456910";"y";"Ramireddy";NULL;"1985-07-02";"male";"Mtech";"2016-03-05";"tenali";"45690"
+"id";"username";"password"
+"1";"admin";"admin"
+"2";"182034009";"182034009"
+"3";"456910";"456910"
+"4";"162034009";"162034009"
+"id";"stuid";"courseid";"midmarks";"assesment marks";"quiz marks";"facid"
+"1";"182034009";"123";"30";"10";"10";
+"2";"162034009";"023";"30";"10";"10";
+"regdno";"surname";"firstname";"lastname";"dob";"gender";"degree";"department";"address";"joiningdate"
+"162034009";"thota";"yashwanth";NULL;"1997-09-04";"male";"Btech";"cse";"tenali";"2016-06-02"
+"182034009";"mattthi";"naveen";NULL;"1996-11-15";"male";"Mtech";"cs&df";"vijayawada";"2018-09-02"
