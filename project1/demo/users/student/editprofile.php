@@ -40,6 +40,7 @@
     //$regdno=$row3['regdno'];
     $department=$row3['department'];
     $address=$row3['address'];
+    $email=$row3['email'];
   }
   /*$age=date_diff(date_create($dateofbirth), date_create('today'))->y;
   echo $age;
@@ -66,12 +67,9 @@
        $path_filename_ext = $target_dir.$filename.".".$ext;
        
       // Check if file already exists
-      if (file_exists($path_filename_ext)) {
-       //echo "Sorry, file already exists.";
-       }else{
+     
        move_uploaded_file($temp_name,$path_filename_ext);
-       //echo "Congratulations! File Uploaded Successfully.";
-       }
+       
     }
     $regdno1 = $_POST['reg'];
     $surname1 = $_POST['sur'];
@@ -83,7 +81,8 @@
     $address1 = $_POST['add'];
     $joiningdate = $_POST['join'];
     echo $regdno1;
-    if(mysqli_query($db, "UPDATE studentdata SET surname='$surname1',firstname='$firstname1',dob='$dateofbirth1',gender='$gender1',degree='$degree1',department='$department1',address='$address1',joiningdate='$joiningdate' WHERE regdno='$regdno1'")) 
+    $email1=$_POST['email'];
+    if(mysqli_query($db, "UPDATE studentdata SET surname='$surname1',firstname='$firstname1',dob='$dateofbirth1',email='$email1',gender='$gender1',degree='$degree1',department='$department1',address='$address1',joiningdate='$joiningdate' WHERE regdno='$regdno1'")) 
     {
       //$successmsg = "Successfully Registered!" <a href='index.php'>Click here to Login</a>;
       $message = "data  changed sucessfully";
@@ -314,6 +313,10 @@
               <div class="form-group">
               <label for="department">Department</label>
                   <input type="text" class="form-control" name="dep" id="exampleInputEmail1" value="<?php echo $department;?>">
+              </div>
+              <div class="form-group">
+              <label for="department">Email</label>
+                  <input type="text" class="form-control" name="email" id="exampleInputEmail1" value="<?php echo $email;?>">
               </div>
               <div class="form-group">
                   <label for="profilepicture">Profile Picture</label>
