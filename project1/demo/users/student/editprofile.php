@@ -23,7 +23,6 @@
 	if($cc == 0)
 	{
 		$t1=$year+4;
-		
 	}
 	else if($cc1 == 0){
 		$t1=$year+2;
@@ -37,39 +36,24 @@
     $lastname=$row3['lastname'];
     $dateofbirth=$row3['dob'];
     $gender=$row3['gender'];
-    //$regdno=$row3['regdno'];
     $department=$row3['department'];
     $address=$row3['address'];
     $email=$row3['email'];
+    $newdate = date("m/d/Y", strtotime($dateofbirth));
+    echo $newdate;
   }
-  /*$age=date_diff(date_create($dateofbirth), date_create('today'))->y;
-  echo $age;
-  echo $regdno;
-  echo $surnmae;
-  echo $firstname;
-  echo $lastname;
-  echo $gender;
-  echo $department;
-  echo $address;
-  echo $cou1;
-  echo $cou;*/
   $error = false;
   if (isset($_POST['submit'])) 
   {
     if (($_FILES['profile']['name']!="")){
-      // Where the file is going to be stored
-       $target_dir = "uploads/";
-       $file = $_FILES['profile']['name'];
-       $path = pathinfo($file);
-       $filename = $path['filename'];
-       $ext = $path['extension'];
-       $temp_name = $_FILES['profile']['tmp_name'];
-       $path_filename_ext = $target_dir.$filename.".".$ext;
-       
-      // Check if file already exists
-     
-       move_uploaded_file($temp_name,$path_filename_ext);
-       
+      $target_dir = "uploads/";
+      $file = $_FILES['profile']['name'];
+      $path = pathinfo($file);
+      $filename = $path['filename'];
+      $ext = $path['extension'];
+      $temp_name = $_FILES['profile']['tmp_name'];
+      $path_filename_ext = $target_dir.$filename.".".$ext;
+      move_uploaded_file($temp_name,$path_filename_ext);
     }
     $regdno1 = $_POST['reg'];
     $surname1 = $_POST['sur'];
@@ -82,18 +66,16 @@
     $joiningdate = $_POST['join'];
     echo $regdno1;
     $email1=$_POST['email'];
-    if(mysqli_query($db, "UPDATE studentdata SET surname='$surname1',firstname='$firstname1',dob='$dateofbirth1',email='$email1',gender='$gender1',degree='$degree1',department='$department1',address='$address1',joiningdate='$joiningdate' WHERE regdno='$regdno1'")) 
+    $newdate1 = date("Y-m-d", strtotime($dateofbirth1));
+    if(mysqli_query($db, "UPDATE studentdata SET dob='$newdate1',surname='$surname1',firstname='$firstname1',email='$email1',gender='$gender1',degree='$degree1',department='$department1',address='$address1',joiningdate='$joiningdate' WHERE regdno='$regdno1'")) 
     {
-      //$successmsg = "Successfully Registered!" <a href='index.php'>Click here to Login</a>;
       $message = "data  changed sucessfully";
       echo "<script type='text/javascript'>alert('$message'); window.location.href = 'editprofile.php' </script>";
     }
     else 
     {
-      echo("k uejrgh vjudfb");
       $message = "Username not found";
       echo "<script type='text/javascript'>alert('$message'); window.location.href = 'editprofile.php' </script>";
-           // header("location: /project/index.php");
     }
   }
 ?>
@@ -184,7 +166,7 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="profile.php" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
                   <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
@@ -343,7 +325,7 @@
                     <div class="input-group-addon">
                       <i class="fa fa-calendar"></i>
                     </div>
-                    <input type="text" class="form-control pull-right" id="datepicker" >
+                    <input type="text" class="form-control pull-right" id="datepicker" name="dob" value="<?php echo $newdate;?>">
                   </div>   
               <!--<input type="text" class="form-control" name="dob" id="exampleInputEmail1"  value="" -->
               </div>
