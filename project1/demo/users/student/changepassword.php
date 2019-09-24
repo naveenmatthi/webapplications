@@ -266,7 +266,7 @@
                     <input type="password" name="cp1" class="form-control" id="cp1" placeholder="Password"/>
                 </div>
                           <!-- /.box-body -->
-                <button type="submit" name="change"class="btn btn-primary" id="submit">Submit</button>
+                <button type="submit" name="change" class="btn btn-primary" id="submit">Submit</button>
             </div> 
         </form>             
     </div>

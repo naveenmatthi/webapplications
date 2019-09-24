@@ -1,13 +1,9 @@
 <?php
-   include("config.php");
-   //echo("sucess");
-   session_start();
-    $data=$_SESSION["user"];
-	//echo($data);
-	//$query=mysqli_query($db,"SELECT user,pass,type FROM login");
+  include("config.php");
+  session_start();
+  $data=$_SESSION["user"];
 	$query=mysqli_query($db,"SELECT degree FROM studentdata WHERE regdno = '$data'");
-	$query2=mysqli_query($db,"SELECT joiningdate FROM studentdata WHERE regdno = '$data'");
-	//echo($query);    
+	$query2=mysqli_query($db,"SELECT joiningdate FROM studentdata WHERE regdno = '$data'");  
 	while ($row = mysqli_fetch_array($query))
 	{
 		$cou=$row['degree'];
@@ -16,7 +12,6 @@
 	{
 		$cou1=$row1['joiningdate'];
 	}
-	
 	$year = strtok($cou1, '-');
 	$str1='Btech';
 	$str2='Mtech';
@@ -33,7 +28,75 @@
 	else if($cc1 == 0){
 		$t1=$year+2;
 	}
-
+  $query3=mysqli_query($db,"SELECT * FROM studentdata WHERE regdno = '$data'");
+  while ($row3 = mysqli_fetch_array($query3))
+	{
+    $regdno=$row3['regdno'];
+    $surnmae=$row3['surname'];
+    $firstname=$row3['firstname'];
+    $lastname=$row3['lastname'];
+    $dateofbirth=$row3['dob'];
+    $gender=$row3['gender'];
+    //$regdno=$row3['regdno'];
+    $department=$row3['department'];
+    $address=$row3['address'];
+  }
+  /*$age=date_diff(date_create($dateofbirth), date_create('today'))->y;
+  echo $age;
+  echo $regdno;
+  echo $surnmae;
+  echo $firstname;
+  echo $lastname;
+  echo $gender;
+  echo $department;
+  echo $address;
+  echo $cou1;
+  echo $cou;*/
+  $error = false;
+  if (isset($_POST['submit'])) 
+  {
+    if (($_FILES['profile']['name']!="")){
+      // Where the file is going to be stored
+       $target_dir = "uploads/";
+       $file = $_FILES['profile']['name'];
+       $path = pathinfo($file);
+       $filename = $path['filename'];
+       $ext = $path['extension'];
+       $temp_name = $_FILES['profile']['tmp_name'];
+       $path_filename_ext = $target_dir.$filename.".".$ext;
+       
+      // Check if file already exists
+      if (file_exists($path_filename_ext)) {
+       //echo "Sorry, file already exists.";
+       }else{
+       move_uploaded_file($temp_name,$path_filename_ext);
+       //echo "Congratulations! File Uploaded Successfully.";
+       }
+    }
+    $regdno1 = $_POST['reg'];
+    $surname1 = $_POST['sur'];
+    $firstname1 = $_POST['nam'];
+    $department1 = $_POST['dep'];;
+    $gender1 = $_POST['gen'];
+    $dateofbirth1 = $_POST['dob'];
+    $degree1 = $_POST['de'];
+    $address1 = $_POST['add'];
+    $joiningdate = $_POST['join'];
+    echo $regdno1;
+    if(mysqli_query($db, "UPDATE studentdata SET surname='$surname1',firstname='$firstname1',dob='$dateofbirth1',gender='$gender1',degree='$degree1',department='$department1',address='$address1',joiningdate='$joiningdate' WHERE regdno='$regdno1'")) 
+    {
+      //$successmsg = "Successfully Registered!" <a href='index.php'>Click here to Login</a>;
+      $message = "data  changed sucessfully";
+      echo "<script type='text/javascript'>alert('$message'); window.location.href = 'editprofile.php' </script>";
+    }
+    else 
+    {
+      echo("k uejrgh vjudfb");
+      $message = "Username not found";
+      echo "<script type='text/javascript'>alert('$message'); window.location.href = 'editprofile.php' </script>";
+           // header("location: /project/index.php");
+    }
+  }
 ?>
 <!DOCTYPE html>
 <html>
@@ -227,39 +290,34 @@
 
     <!-- Main content -->
     <section class="content">
-
 <!-- Default box -->
-<div class="box">
-  </form role="form">
-  <div class="box-body">
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </div>
+      <form name="form" method="post" action =" " enctype="multipart/form-data">
+        <div class="box">
+          <div class="box-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="register number">Register Number</label>
+                    <input type="text" class="form-control" name="reg" id="exampleInputEmail1" value="<?php echo $regdno;?>">
+                </div>
               <!-- /.form-group -->
               <div class="form-group">
-                <label>Disabled</label>
-                <label for="exampleInputEmail1" >Email address6</label>
-                  <input type="email" class="form-control" disabled="disabled" id="exampleInputEmail1" placeholder="Enter email">
+                
+                <label for="surname" >SurName</label>
+                  <input type="text" class="form-control"  name="sur" id="exampleInputEmail1" value="<?php echo $surnmae;?>">
               </div>
               <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              <label for="name">Name</label>
+                  <input type="text" class="form-control" name="nam" id="exampleInputEmail1" value="<?php echo $firstname;?>">
+              </div>
+              
+              <div class="form-group">
+              <label for="department">Department</label>
+                  <input type="text" class="form-control" name="dep" id="exampleInputEmail1" value="<?php echo $department;?>">
               </div>
               <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">
+                  <label for="profilepicture">Profile Picture</label>
+                  <input type="file" id="profilepicture" name="profile">
 
                   <p class="help-block">Example block-level help text here.</p>
                 </div>
@@ -268,46 +326,44 @@
             <!-- /.col -->
             <div class="col-md-6">
               <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              <label for="gender">Gender</label>
+                  <input type="text" class="form-control" name="gen" id="exampleInputEmail1" value="<?php echo $gender;?>">
+              </div>
+              <div class="form-group">
+              <label for="dateofbirth">Date Of Birth</label>
+                  <input type="text" class="form-control" name="dob" id="exampleInputEmail1"  value="<?php echo $dateofbirth;?>" >
               </div>
               <!-- /.form-group -->
               <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              <label for="degree">Degree</label>
+                  <input type="text" class="form-control" name="de" id="exampleInputEmail1" readonly value="<?php echo $cou;?>">
               </div>
               <!-- /.form-group -->
+              
               <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                  <label>Textarea</label>
-                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                  <label>Address</label>
+                  <textarea class="form-control" name="add" rows="2" ><?php echo $address;?></textarea>
                 </div>
               <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              <label for="joining date">Joining date</label>
+                  <input type="text" name="join" class="form-control" readonly id="exampleInputEmail1" value="<?php echo $cou1;?>">
               </div>
             </div>
             <!-- /.col -->
           </div>
           <!-- /.row -->
-       
-  </div>
-  <!-- /.box-body -->
-  </form>
-  <div class="box-footer">
-    Footer
-  </div>
-  <!-- /.box-footer-->
-</div>
-<!-- /.box -->
+          </div>
+          <div class="box-footer">
+              <button type="submit" class="btn btn-default">Reset</button>
+            <button type="submit" name="submit" class="btn btn-info pull-right" id="submit">submit</button>
+          </div>
+  
+        </div>
 
-</section>
-     
-    <!-- /.content -->
+      </form>
+    </section>
   </div>
+    <!-- /.content -->
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     

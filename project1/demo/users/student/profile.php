@@ -28,30 +28,7 @@
 	else if($cc1 == 0){
 		$t1=$year+2;
   }
-  $query3=mysqli_query($db,"SELECT * FROM studentdata WHERE regdno = '$data'");
-  while ($row3 = mysqli_fetch_array($query3))
-	{
-    $regdno=$row3['regdno'];
-    $surnmae=$row3['surname'];
-    $firstname=$row3['firstname'];
-    $lastname=$row3['lastname'];
-    $dateofbirth=$row3['dob'];
-    $gender=$row3['gender'];
-    //$regdno=$row3['regdno'];
-    $department=$row3['department'];
-    $address=$row3['address'];
-  }
-  $age=date_diff(date_create($dateofbirth), date_create('today'))->y;
-  echo $age;
-  echo $regdno;
-  echo $surnmae;
-  echo $firstname;
-  echo $lastname;
-  echo $gender;
-  echo $department;
-  echo $address;
-  echo $cou1;
-  echo $cou;
+  
 ?>
 <!DOCTYPE html>
 <html>
