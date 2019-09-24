@@ -429,11 +429,9 @@
 <!--  dashboard demo (This is only for demo purposes) -->
 <script src="ascets/dist/js/pages/dashboard.js"></script>
 <!--  for demo purposes -->
-<script src="ascets/dist/js/demo.js"></script>
-<script src="ascets/bower_components/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap 3.3.7 -->
-<script src="ascets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Select2 -->
+
+
+
 <script src="ascets/bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- InputMask -->
 <script src="ascets/plugins/input-mask/jquery.inputmask.js"></script>
