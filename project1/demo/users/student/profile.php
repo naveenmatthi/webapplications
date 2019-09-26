@@ -235,86 +235,52 @@
     </section>
     <section class="content">
 <!-- Default box -->
-      <form name="form" method="post" action =" " enctype="multipart/form-data">
-        <div class="box">
-          <div class="box-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="register number">Register Number</label>
-                    <?php echo $regdno;?>
-                </div>
-              <!-- /.form-group -->
-              <div class="form-group">
-                
-                <label for="surname" >SurName</label>
-                  <input type="text" class="form-control"  name="sur" id="exampleInputEmail1" value="<?php echo $surnmae;?>">
-              </div>
-              <div class="form-group">
-              <label for="name">Name</label>
-                  <input type="text" class="form-control" name="nam" id="exampleInputEmail1" value="<?php echo $firstname;?>">
-              </div>
-              
-              <div class="form-group">
-              <label for="department">Department</label>
-                  <input type="text" class="form-control" name="dep" id="exampleInputEmail1" value="<?php echo $department;?>">
-              </div>
-              <div class="form-group">
-              <label for="department">Email</label>
-                  <input type="text" class="form-control" name="email" id="exampleInputEmail1" value="<?php echo $email;?>">
-              </div>
-              <div class="form-group">
-                  <label for="profilepicture">Profile Picture</label>
-                  <input type="file" id="profilepicture" name="profile">
-
-                  <p class="help-block">Example block-level help text here.</p>
-                </div>
-              <!-- /.form-group -->
+<div class="box">
+            
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example2" class="table table-bordered table-hover" >
+                <tr>
+                  <td>Register number</td>
+                  <td><?php $regdno ?></td>
+                </tr>
+                <tr>
+                  <td>Name</td>
+                  <td>Internet Explorer 4.0</td>
+                </tr>
+                <tr>
+                  <td>Email address</td>
+                  <td>Internet Explorer 4.0</td>
+                </tr>
+                <tr>
+                  <td>Date Of Birth</td>
+                  <td>Internet Explorer 4.0</td>
+                </tr>
+                <tr>
+                  <td>Degree</td>
+                  <td>Internet Explorer 4.0</td>
+                </tr>
+                <tr>
+                  <td>Department</td>
+                  <td>Internet Explorer 4.0</td>
+                </tr>
+                <tr>
+                  <td>Age</td>
+                  <td>Internet Explorer 4.0</td>
+                </tr>
+                <tr>
+                  <td>Adderss</td>
+                  <td>Internet Explorer 4.0</td>
+                </tr>
+                <tr>
+                  <td>Joining date</td>
+                  <td>Internet Explorer 4.0</td>
+                </tr>
+               
+              </table>
             </div>
-            <!-- /.col -->
-            <div class="col-md-6">
-              <div class="form-group">
-              <label for="gender">Gender</label>
-                  <input type="text" class="form-control" name="gen" id="exampleInputEmail1" value="<?php echo $gender;?>">
-              </div>
-              <div class="form-group">
-                <label for="dateofbirth">Date Of Birth</label>
-                  <div class="input-group date">
-                    <div class="input-group-addon">
-                      <i class="fa fa-calendar"></i>
-                    </div>
-                    <input type="text" class="form-control pull-right" id="datepicker" name="dob" value="<?php echo $newdate;?>">
-                  </div>   
-              <!--<input type="text" class="form-control" name="dob" id="exampleInputEmail1"  value="" -->
-              </div>
-              <!-- /.form-group -->
-              <div class="form-group">
-              <label for="degree">Degree</label>
-                  <input type="text" class="form-control" name="de" id="exampleInputEmail1" readonly value="<?php echo $cou;?>">
-              </div>
-              <!-- /.form-group -->
-              
-              <div class="form-group">
-                  <label>Address</label>
-                  <textarea class="form-control" name="add" rows="2" ><?php echo $address;?></textarea>
-                </div>
-              <div class="form-group">
-              <label for="joining date">Joining date</label>
-                  <input type="text" name="join" class="form-control" readonly id="exampleInputEmail1" value="<?php echo $cou1;?>">
-              </div>
-            </div>
-            <!-- /.col -->
+            <!-- /.box-body -->
           </div>
-          <!-- /.row -->
-          </div>
-          <div class="box-footer">
-              <button type="submit" class="btn btn-default">Reset</button>
-            <button type="submit" name="submit" class="btn btn-info pull-right" id="submit">submit</button>
-          </div>
-  
-        </div>
-
-      </form>
     </section>
     <!-- Main content -->
     
@@ -335,6 +301,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
+
 <script src="ascets/bower_components/jquery/dist/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="ascets/bower_components/jquery-ui/jquery-ui.min.js"></script>
