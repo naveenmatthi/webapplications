@@ -3,7 +3,8 @@
   session_start();
   $data=$_SESSION["user"];
 	$query=mysqli_query($db,"SELECT degree FROM studentdata WHERE regdno = '$data'");
-	$query2=mysqli_query($db,"SELECT joiningdate FROM studentdata WHERE regdno = '$data'");
+  $query2=mysqli_query($db,"SELECT joiningdate FROM studentdata WHERE regdno = '$data'");
+  $query3=mysqli_query($db,"SELECT * FROM studentdata WHERE regdno = '$data'");
 	while ($row = mysqli_fetch_array($query))
 	{
 		$cou=$row['degree'];//degree
@@ -28,7 +29,7 @@
 	else if($cc1 == 0){
 		$t1=$year+2;
   }
-  $query3=mysqli_query($db,"SELECT * FROM studentdata WHERE regdno = '$data'");
+  
   while ($row3 = mysqli_fetch_array($query3))
 	{
     $regdno=$row3['regdno'];
@@ -41,8 +42,19 @@
     $address=$row3['address'];
     $email=$row3['email'];
     $newdate = date("m/d/Y", strtotime($dateofbirth));
-    echo $newdate;
+    
   }
+  $age=date_diff(date_create($dateofbirth), date_create('today'))->y;
+  echo $age;
+  echo $regdno;
+  echo $surnmae;
+  echo $firstname;
+  echo $lastname;
+  echo $gender;
+  echo $department;
+  echo $address;
+  echo $cou1;
+  echo $cou;
 ?>
 <!DOCTYPE html>
 <html>
@@ -242,39 +254,39 @@
               <table id="example2" class="table table-bordered table-hover" >
                 <tr>
                   <td>Register number</td>
-                  <td><?php $regdno ?></td>
+                  <td><?php echo $regdno; ?></td>
                 </tr>
                 <tr>
                   <td>Name</td>
-                  <td>Internet Explorer 4.0</td>
+                  <td><?php echo $surnmae; ?><?php echo $firstname; ?></td>
                 </tr>
                 <tr>
                   <td>Email address</td>
-                  <td>Internet Explorer 4.0</td>
+                  <td><?php echo $email; ?></td>
                 </tr>
                 <tr>
                   <td>Date Of Birth</td>
-                  <td>Internet Explorer 4.0</td>
+                  <td><?php echo $dateofbirth; ?></td>
                 </tr>
                 <tr>
                   <td>Degree</td>
-                  <td>Internet Explorer 4.0</td>
+                  <td><?php echo $cou1; ?></td>
                 </tr>
                 <tr>
                   <td>Department</td>
-                  <td>Internet Explorer 4.0</td>
+                  <td><?php echo $department; ?></td>
                 </tr>
                 <tr>
                   <td>Age</td>
-                  <td>Internet Explorer 4.0</td>
+                  <td><?php echo $age; ?></td>
                 </tr>
                 <tr>
                   <td>Adderss</td>
-                  <td>Internet Explorer 4.0</td>
+                  <td><?php echo $address; ?></td>
                 </tr>
                 <tr>
                   <td>Joining date</td>
-                  <td>Internet Explorer 4.0</td>
+                  <td><?php echo $cou; ?></td>
                 </tr>
                
               </table>
