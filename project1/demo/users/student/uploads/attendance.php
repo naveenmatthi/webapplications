@@ -200,8 +200,8 @@
           </a>
         </li>
         <li>
-          <a href="marks.php">
-            <i class="fa fa-folder"></i> <span>Marks</span>
+          <a href="attendance.php">
+            <i class="fa fa-folder"></i> <span>Attendance</span>
             
           </a>
           
