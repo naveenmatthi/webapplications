@@ -7,12 +7,12 @@
       
       $myusername = mysqli_real_escape_string($db,$_POST['user']);
       $mypassword = mysqli_real_escape_string($db,$_POST['pass']);
-	  $query=mysqli_query($db,"SELECT user,pass,type FROM login");
+	  $query=mysqli_query($db,"SELECT username,password,type FROM login");
 	  
 	  while($row=mysqli_fetch_array($query))
 	  {
-		$db_user=$row["user"];
-		$db_pass=$row["pass"];
+		$db_user=$row["username"];
+		$db_pass=$row["password"];
 		$db_type=$row["type"];
 		
 		if($myusername==$db_user && $mypassword==$db_pass){
