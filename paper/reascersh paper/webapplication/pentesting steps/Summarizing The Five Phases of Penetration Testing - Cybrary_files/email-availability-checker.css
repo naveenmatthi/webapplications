@@ -1,0 +1,35 @@
+/* The css is taken from bp-default theme, thanks to @apeatling, I have just modified the selectors*/
+.email_checker {
+    position: relative;
+}
+.email_checker span.loading2 {
+    background-image: url(ajax-loader.gif);
+    background-position: 92% 50%;
+    background-repeat: no-repeat;
+    padding-right: 30px !important;
+}
+.bp-ajaxr-loader {
+    margin: 20px auto;
+    width: 40px;
+}
+.bp-ajaxr-loader img {
+    width: 40px;
+}
+.email_checker  span.available,
+.email_checker span.error {
+    display: none;
+}
+.email_checker span.available {
+    display: block;
+    color: green;
+    margin-top: -20px;
+    font-size: 12px;
+    height: 20px;
+}
+.email_checker span.error {
+    display: block;
+    color: #ff3b54;
+    margin-top: -20px;
+    font-size: 12px;
+    height: 20px;
+}

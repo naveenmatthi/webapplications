@@ -1,0 +1,195 @@
+/* Custom Styles */
+body, #page-content-title .title-description { font-family:'Open Sans'; font-weight: normal; font-style: normal; }
+body { font-size:16px; line-height:1.5; }
+h1, h2, h3, h4, h5, h6, #slogan { font-family:'Lato'; }
+h1, h2, h3, h4, h5, h6 { line-height:1.2; font-weight: normal; font-style: normal; }
+
+#top-elements { height:75px; }
+#logo h1 a, #logo .site-name a { background:transparent url( https://www.cybrary.it/wp-content/uploads/2018/02/Cyb_new_Logo-255x49.png ) no-repeat 0 100%; width:255px; height:60px; }       
+#slogan { 
+    top:10px;
+    left:0px;
+}
+#slogan { font-size:12px; }
+#navigation-menu { font-family:'Droid Sans'; font-weight: normal; font-style: normal; font-size:18px; }
+#navigation-menu > ul.sf-menu { margin-top:0; }
+    #main-menu { background:none; }
+h1 {font-size:2.5662em; }
+h2 {font-size:2.3338em; }
+h3 {font-size:2.1em; }
+h4 {font-size:1.8662em; }
+h5 {font-size:1.75em; }
+h6 {font-size:1.5162em; }
+
+#page-content-title #page-title h1, #page-content-title #page-title h2, #page-content-title #page-title h3 {font-size:2.3338em;}
+.post-top h1, .post-top h2, .post-top h3 { font-size:2.66em; }
+#sidebarSubnav h3, h3.bottom-col-title {font-size:1.694em; }
+.portfolio-items-wrapper h2 {font-size:1.8662em; }
+h2.portfolio-single-column {font-size:2.3338em; }
+
+
+#c2-slider .slide-desc h2, #c2-slider .slide-desc { color:#333333; }
+#c2-slider .slide-desc h2 { font-size:1.8em !important; font-family:'Open Sans'; line-height:1.7; }
+#c2-slider .slide-desc p, #c2-slider .slide-desc ul { font-size:1.2em; line-height:1.7; }
+#c3-slider .sliding-text { color:#FFFFFF; font-size:1.2em; line-height:1.7; }
+
+
+    @media screen and (min-width: 720px) {
+        #navigation-menu { left: 0; padding-left: 4px; }
+        .u-design-responsive-on #navigation-menu { left: 0; padding-left: 17px; }
+    }
+    @media screen and (min-width: 960px) {
+        .u-design-responsive-on #navigation-menu { left: 0; padding-left: 4px; }
+    }
+    
+/* secondary nav bar items' alignments */
+#sec-nav-text-area-1 { text-align: left; }
+#sec-nav-text-area-2 { text-align: right; }
+#sec-nav-menu-area { text-align: center; }
+    
+
+body, .posts-counter, h3.accordion-toggle a { color:#464241; }
+a, #isotope-options li a:hover, #isotope-options li a.selected, h3.accordion-toggle.active a { color:#0E628C; }
+a:hover, .post-top h2 a:hover, .post-top h3 a:hover, #isotope-options li a, .single-post-nav-links .prev-title a:hover, .single-post-nav-links .next-title a:hover { color:#333333; }
+.custom-formatting li.current_page_item > a, .custom-formatting li.current-menu-item > a, .custom-formatting li.current-cat > a, .custom-formatting li.current > a { color: #333333; }
+.custom-formatting li.current_page_item > a:hover, .custom-formatting li.current-menu-item > a:hover,.custom-formatting li.current-cat > a:hover, .custom-formatting li.current > a:hover { color: #0E628C; }
+h1, h2, h3, h4, h5, h6, .post-top h2 a, .post-top h3 a, .single-post-nav-links .prev-title a, .single-post-nav-links .next-title a { color:#333333; }
+    #top-wrapper { background-color:#17181D; }
+#slogan, #top-elements .phone-number, #top-elements .social_media_title, #search input.blur, #search input.inputbox_focus { color:#333333; }
+#slogan{ color:#333333; }
+    #c1-header, #c2-header, #c3-header, #rev-slider-header { background-color:#FFFFFF; }
+    #main-menu {
+        background-color: #FBFBFB; /* the fallback */
+        background-color: rgba(251,251,251,0);
+    }
+@media screen and (min-width: 720px) {
+    .u-design-fixed-menu-on.fixed-menu #main-menu {
+        background-color: #FBFBFB; /* the fallback */
+        background-color: rgba(251,251,251,0);
+    }
+}
+#navigation-menu ul.sf-menu > li > a > span { color:#333333; }
+#navigation-menu ul.sf-menu > li.current-menu-item > a > span, #navigation-menu ul.sf-menu > li.current_page_item > a > span { color:#305FA7; }
+#navigation-menu ul.sf-menu > li.current-menu-item > a > span:hover, #navigation-menu ul.sf-menu > li.current_page_item > a > span:hover { color:#777777; }
+#navigation-menu ul.sf-menu > li > a:hover span { color:#777777; }
+#navigation-menu ul.sf-menu a, #navigation-menu ul.sf-menu a:visited {color: #777777; }
+#navigation-menu ul.sf-menu a:hover  { color:#222222; }
+#navigation-menu ul.sf-menu li li {
+    background-image: none;
+    margin-bottom: 1px;
+    background-color: #EEEEEE; /* the fallback */
+    background-color: rgba(238,238,238,0.95);
+}
+#secondary-navigation-bar-wrapper  {
+    background-color: #212121; /* the fallback */
+    background-color: rgba(33,33,33,0.95);
+}
+#secondary-navigation-bar-content  { color:#EBEBEB; }
+#secondary-navigation-bar-content a { color:#A3A3A3; }
+#secondary-navigation-bar-content a:hover { color:#FF8400; }
+#page-content-title #page-title h1, #page-content-title #page-title h2, #page-content-title #page-title h3,
+#page-content-title #page-title .breadcrumbs, #page-content-title #page-title .breadcrumbs a { color:#FFFFFF; }
+    #page-content-title { background-color:#000000; }
+    #home-page-content, #page-content, .no_title_section #page-content { background-color:#FFFFFF; }
+h3.before_cont_title { color:#333333; }
+#before-content { color:#333333; }
+    #before-content { background-color:#F8F8F8; }
+    #bottom-bg { background-color: #2C3338; }
+h3.bottom-col-title { color: #FFFFFF; }
+#bottom, #bottom .textwidget, #bottom #wp-calendar, #bottom .posts-counter { color: #FFFFFF; }
+#bottom a { color: #FFFFFF; }
+#bottom a:hover { color: #03A2D6; }
+    #footer-bg { background-color: #2C3338; }
+body { background-color: #2C3338; }
+#footer, #footer_text { color: #767B7E; }
+#footer a, #footer_text a { color: #767B7E; }
+#footer a:hover, #footer_text a:hover { color: #03A2D6; }
+
+
+    @media screen and (max-width: 719px) {
+        #logo h1 a, #logo .site-name a { background:transparent url( https://www.cybrary.it/wp-content/uploads/2018/02/Cyb_new_Logo-255x49.png ) no-repeat 0 100%; height:49px; }
+        #wrapper-1, #top-wrapper, #c1-header, #c2-header, #c3-header, #rev-slider-header, #page-content-title, #home-page-content, #page-content, .no_title_section #page-content, #before-content, #bottom-bg, #footer-bg { background-image:none; }
+    }
+    @media screen and (max-width: 959px) {
+        #c2-slider .slide-desc p, #c2-slider .slide-desc ul  { font-size:1.1em; line-height:1.6; }
+        ul#c2-slider li ul li { font-size:0.8em; }
+    }
+    @media screen and (max-width: 480px) {
+        #c2-slider .slide-desc h2 { font-size:1.4em !important; line-height:1.5; }
+    }
+    @media screen and (min-width: 720px) and (max-width: 959px) {
+        #c2-slider .slide-desc h2 { font-size:1.7em !important; line-height:1.6; }
+    }
+
+@media screen and (min-width: 720px) {
+    .u-design-fixed-menu-on.fixed-menu #top-elements,
+    .u-design-fixed-menu-on.fixed-menu #secondary-navigation-bar-wrapper {
+        display: none;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .u-design-fixed-menu-on.fixed-menu #top-wrapper {
+        background-color:#17181D;
+        position: fixed;
+        display: block;
+        width: 100%;
+        z-index: 9500;
+        opacity: 0.90;
+    }
+    .u-design-fixed-menu-on.fixed-menu #navigation-menu ul.sf-menu { margin-top: 0; }
+    #sticky-menu-alias, #sticky-menu-logo { display: none; }
+    
+    .u-design-fixed-menu-on.fixed-menu #navigation-menu #sticky-menu-logo {
+        display:inline-block;
+        float:left;
+        height: 40px;
+        padding-left: 20px;
+    }
+    .u-design-fixed-menu-on.fixed-menu #navigation-menu #sticky-menu-logo img { height: inherit; }
+    .u-design-fixed-menu-on.fixed-menu #navigation-menu > ul.sf-menu { background-color: transparent; }
+        .u-design-fixed-menu-on.fixed-menu #navigation-menu > ul.sf-menu {
+          margin-left: 0;
+          margin-right: 0;
+        }
+}
+    
+    @media screen and (min-width: 960px) {
+    
+        /* Set the Container widths first */
+        .container_24 {
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+        /* Sidebar */
+        #main-content.grid_16 { width: 75%; }
+        #sidebar.grid_8 { width: 25%; }
+        #sidebar.push_8, #main-content.push_8 { left: 25%; }
+        #main-content.pull_16, #sidebar.pull_16 { right: 75%; }
+        embed, object, iframe { width: 100%; }
+    
+    }
+    /* BEGIN: STICKY FOOTER CSS */
+    html, body { height: 100%; }
+    #wrapper-1 { min-height: 100%; }
+    #wrapper-1 { background-color: inherit;}
+    .push {
+        overflow:auto;
+        padding-bottom: 44px; 
+    }
+    #footer-bg {
+        position: relative;
+        margin-top: -44px; /* negative value of footer height */
+        height: 44px;
+        clear:both;
+    }
+    /* Opera Fix */
+    body:before {
+        content:"";
+        height:100%;
+        float:left;
+        width:0;
+        margin-top:-32767px;
+    }
+    /* END: STICKY FOOTER CSS */
