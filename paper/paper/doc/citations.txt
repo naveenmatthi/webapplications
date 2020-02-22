@@ -4,6 +4,8 @@ Ayeni, Bakare K., et al. “Detecting Cross-Site Scripting in Web Applications U
 
 Glossary - Web Application Security Consortium, www.webappsec.org/projects/glossary/.
 
+“Injection Flaws.” OWASP, owasp.org/www-community/Injection_Flaws.
+
 Kaur, Parminder, and Navdeep Kaur. “Input Validation Vulnerabilities in Web Applications.” Journal of Software Engineering, vol. 8, no. 3, Jan. 2014, pp. 116–126., doi:10.3923/jse.2014.116.126.
 
 Muscat, Ian. “What Is Local File Inclusion (LFI)?” Acunetix, 11 Mar. 2019, www.acunetix.com/blog/articles/local-file-inclusion-lfi/.
