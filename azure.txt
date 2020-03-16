@@ -79,6 +79,11 @@ curl "https://WestEurope.api.cognitive.microsoft.com/vision/v2.0/analyze?visualF
 -H "Ocp-Apim-Subscription-Key: $key" \
 -H "Content-Type: application/json" \
 -d "{'url' : 'https://raw.githubusercontent.com/MicrosoftDocs/mslearn-process-images-with-the-computer-vision-service/master/images/people.png'}" \
+
+
+
+
+https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd
 | jq '.'
 
 
