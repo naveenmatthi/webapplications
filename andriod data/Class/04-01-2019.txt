@@ -1,0 +1,13 @@
+Session Management
+
+Fixation
+Cookie Attributes
+Chache
+Logout Functionality
+Session Mismanagement
+Privilege Escalation
+Broken Access Control
+Session Tokens in URL
+Host Header Attack
+Cross Site Request Forgery
+Session Hijacking

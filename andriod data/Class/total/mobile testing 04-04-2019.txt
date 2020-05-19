@@ -1,0 +1,20 @@
+.dex			android extension
+.apk 			compressed application file
+apptool 		to decompile the whole application and rebuild
+enjarify 		to convert into jar file for human readable
+mobsf			Mobile Security Framework tool (to scan the whole application static analysis)
+
+Four Components
+
+activities 		frontend view actions like login				bypassing main activity ()
+services		Background running programs
+broadcast receivers	Permission (Ex: autofilling OTP)
+content providers	Transport the data between apk and internal storage
+
+Code Affascation vulnerability	being able to the jar file
+Token mismanagement
+CSRF not possible
+
+
+
+Same origin policy	Domain, Port, Protocol

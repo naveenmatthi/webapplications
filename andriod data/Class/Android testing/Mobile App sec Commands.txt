@@ -1,0 +1,17 @@
+Installing docker:-
+
+https://medium.com/@airman604/installing-docker-in-kali-linux-2017-1-fbaa4d1447fe
+
+
+Installing mobsf:-
+
+docker pull opensecurity/mobile-security-framework-mobsf
+
+docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+
+
+
+If docker not woring:-
+
+systemctl start docker
+gpasswd -a $USER docker

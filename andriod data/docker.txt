@@ -1,0 +1,57 @@
+MOBSF
+Apktool
+
+
+---------------------------------------MOBSF-------------------------------------------
+starting docker service
+
+1.)systemctl start docker
+2.)systemctl enable docker
+
+
+for installing mobsf in kali linux using docker
+
+1.)docker pull opensecurity/mobile-security-framework-mobsf
+
+
+for runing the mobsf use command 
+
+1.)docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+
+
+---------------------------------------apktool-------------------------------------------
+It is a tool for reverse engineering 3rd party, closed, binary Android apps. 
+It can decode resources to nearly original form and rebuild them after making some modifications; 
+it makes possible to debug smali code step by step
+
+
+Installing apk tool in kali linux
+download warpper scrip fron https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool and save it as apktool 
+download apktool jar file from https://bitbucket.org/iBotPeaches/apktool/downloads/ and save it as apktool.jar
+Move both files (apktool.jar & apktool) to /usr/local/bin and change permissions
+  
+commands
+apktool -h to get list of available commands
+  apktool d filenameof apk with path -o outputpath
+
+
+
+
+---------------------------------------jd-gui-------------------------------------------
+java debugger graphical user interface
+JD-GUI is a standalone graphical utility that displays Java source codes of “.class” files. You can browse the reconstructed source code with the JD-GUI for instant access to methods and fields.
+JD-GUI lets you drag and drop LOG files, decompile CLASS files, and display the line of code that appears in Java stack traces
+JD-GUI displays color coded Java source code. JD-GUI allows you to browse the CLASS files and Java modules hierarchy.
+JD-GUI supports CLASS, JAR, WAR, EAR, AAR, KAR, JMOD & ZIP files.  
+
+
+download jd-gui.jar file from http://java-decompiler.github.io/ and open using command java -jar jd-gui.jar file name with path
+
+
+
+---------------------------------------Enjarify-------------------------------------------
+Enjarify is a tool for translating Dalvik bytecode to equivalent Java bytecode. This allows Java analysis tools to analyze Android applications
+
+python3 -O -m enjarify.main yourapp.apk(with path)
+
+----------------------------------------------------------------------------------

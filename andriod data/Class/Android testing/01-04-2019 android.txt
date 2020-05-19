@@ -1,0 +1,71 @@
+Static scan using mobsf
+
+VM's --- Genymotion, androidtammer, appuse, mobisef(dynamic) , libra python (apk to source code)
+
+
+Genymotion
+
+C drive
+
+genymotion 
+
+adb path
+
+Installation 
+
+abd.exe devices --- list the devices
+
+abd.exe install "apk file path"
+
+
+abd.exe shell
+
+su  --- root access
+
+cd /data/data  ---  application storage
+
+ls --- list of package names
+ 
+grep -i "package"  --- to grep the only package
+
+cd  package name
+
+ls --- test any sensitive data
+
+
+---- adb PUSH & PULL to transfer files to & fro
+adb pull "apkpath" 
+
+
+Drozer(MWR Labs) tools --- server (in desktop) & agent in mobile  or appie tool
+
+"drozer apk server should be in on state in mobile"
+
+IN APPIE ----
+
+cd "Genymotion adb path"
+adb.exe forward tcp:31415 tcp:31415   ---- port forwarding 31415 port open on mobile 
+
+drozer console connect
+
+ls
+
+run package.list
+
+run app.package.info -a "packagename" --- to check all the permission details
+
+run app.package.attacksurface "packagename"
+
+run app.activity.info -a "packagename"
+
+run app.activity.start --component "packagename" "activityname" --- if it access the internal pages directly then report it as authentication bypass or authorization bypass
+
+______APPUSE____
+
+Open the VM
+
+appuse tool
+
+select the device
+
+emulator password -- 1234 (default)

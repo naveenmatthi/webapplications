@@ -1,0 +1,52 @@
+Reverse Engineering Vulnerability able to extract 
+
+
+jadex ----   another tool (don't download)
+apktool_2.4.0 (download from github)
+java -jar apktool_2.4.0.jar d pmkisanapp.apk	(command and the apk file for testing)
+
+enjarify --- tool for changing the mali to readable language (download from github)
+
+
+R_mali in google play services where the data can edit
+
+./enjarify.sh '/root/Desktop/pmkisanapp.apk' ---  to extract the apk and change to human readable language
+
+
+jd-gui ---  java debugger graphical user interface
+
+launch the jd-gui(in APPUSE-> android dashboard -> Tools) and drag and drop the pmkisanapp-enjarify.jar in enjarify folder
+
+
+dex --- barbic executable file
+
+
+Go to manifest file and notedown the package name
+
+
+then go to jd-gui and move to the directory
+
+Able to read all the activity and otp verification and all the things ----  report it as a vulnerability (vulnerability name - code is not affascated -- reverse engineering possible)
+
+find the allowbackup if it is set to true ---  report it as a vulnerability (should be false) its defalut value is true developer has to change
+
+find the allowdebuggable (not found in testing app) but if it is true ---  report it as a vulnerability and its default value is false --- if it is true it will access the internal storage
+
+check the permissions before that check the functionality understand the application usage then if you found any unnecessary permissions then report it as a vulnerability
+
+find the activity export is to true (not found in testing app) ---  report it as a vulnerability ---- it should be false
+
+find the service export is to true (not found in testing app) ---  report it as a vulnerability ---- it should be false
+
+find the provider export is to true (not found in testing app)  ---  report it as a vulnerability ---- it should be false
+
+logcat
+
+log.v
+log.e
+log.i
+log.w
+
+
+
+Exercise --- people first android app

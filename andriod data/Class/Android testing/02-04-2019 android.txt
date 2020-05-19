@@ -1,0 +1,18 @@
+Reverse Engineering Vulnerability able to extract 
+
+
+
+apktool_2.4.0 (download from github)
+java -jar apktool_2.4.0.jar d pmkisanapp.apk(command and the apk file for testing)
+jardex ----   another tool (don't download)
+enjarify --- tool for changing the mali to readable language (download from github)
+
+
+R_mali in google play services where the data can edit
+
+./enjarify.sh '/root/Desktop/pmkisanapp.apk' ---  to extract the apk and change to human readable language
+
+
+jd-gui ---  java debugger graphical user interface
+
+launch the jd-gui and drag and drop the pmkisanapp-enjarify.jar in enjarify folder

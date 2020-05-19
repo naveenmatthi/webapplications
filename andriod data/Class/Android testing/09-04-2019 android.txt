@@ -1,0 +1,11 @@
+abd -s "DEVICE NAME" shell   		to select a particular device
+run-as com.mwr.example.sieve		to move in to particular package
+
+cp "filename" /sdcard
+
+Open another command prompt and pull the file as below command
+
+C:\Users\redteam006>"C:\Program Files\Genymobile\Genymotion\tools\adb.exe" pull /sdcard/database.db
+/sdcard/database.db: 1 file pulled. 0.9 MB/s (24576 bytes in 0.027s)
+
+then you can open the .db file using sqlite browser

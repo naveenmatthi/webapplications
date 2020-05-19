@@ -1,0 +1,29 @@
+webview
+static application
+authorization headers
+disable logs
+
+IOS - keychain - have to check
+
+ASLR - Address Space Layout Randomization
+
+PIE - pollution independent executable
+
+smali
+
+ASLR Stacksmashing
+
+
+docker pull opensecurity/mobile-security-framework-mobsf
+docker run -it -p8000:8000 opensecurity/mobile-security-framework-mobsf:latest
+
+if docker not working
+systemctrl start docker
+gpasswd -a $USER docker
+
+logcat
+
+log.v
+log.e
+log.i
+log.w

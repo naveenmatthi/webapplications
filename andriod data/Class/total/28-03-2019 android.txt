@@ -1,0 +1,36 @@
+Mobile Application Security
+
+activities - frontend
+services - Background
+broadcast receivers - like otp autofill
+content providers - transport the data between storage and app
+
+Using Linux Kernel
+
+User based permission model
+
+AndroidManifest.xml
+
+Android backup   -	have to check
+
+Genny motion
+
+Burpsuite Traffic analysis (runtime)
+static analysis	code related (week functions)
+forensic analysis (storing data)
+
+runtime analysis	burpsuite
+			drozer
+			frida
+
+static analysis		APK TOOL
+			decompiling apk tool
+			enjarifi	dex2jar
+			jdgui(java decompiler graphical user interface)
+			mobsof(automated tool)
+
+Internal Storage	Android Debug Bridge (ADB)
+			logcat
+						
+internal storage path - /data/data/<application name>   	path to check
+

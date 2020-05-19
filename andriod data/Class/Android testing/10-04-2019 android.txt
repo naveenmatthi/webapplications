@@ -1,0 +1,14 @@
+Lisence adding
+
+keytool -genkeypair -v -keystore test.keystore -alias publishingdoc -keyalg RSA
+
+
+"C:\Program Files\Java\jdk1.8.0_201\bin\jarsigner.exe" -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore test.keystore pmkisan.apk publishingdoc
+
+
+"C:\Program Files\Java\jdk1.8.0_201\bin\jarsigner.exe" -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore test.keystore pmkisanapp.apk publishingdoc
+
+
+To Verify the signature
+
+jarsigner -verify -verbose -certs pmkisanapp.apk
