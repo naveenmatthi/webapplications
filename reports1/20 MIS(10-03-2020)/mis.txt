@@ -1,0 +1,35 @@
+MIS
+
+http://125.17.121.166:8080/APIndus_MIS
+
+User Name: COI-AP
+Password: 1qaz!QAZ
+
+
+
+4brgpd3tcrzyu03vlbfejceq
+49690';alert(1)//683
+
+
+
+Incentives/MeetingsScheduled.aspx
+
+
+
+
+
+
+
+session fixation------------------1
+improper error handling----------2
+clear test submission of password----------------------3
+INSUFFICENT ANTI AUTOMATION------------------4
+concurrent logins--------------5
+host header injection-------------6
+Last login time-----------------------7
+usernames feilds with auto complete on enabled------------------8
+
+
+csp header --------------------------------9
+vunlerable version of jquer version-------------------10
+version disclosure-------------------------------11

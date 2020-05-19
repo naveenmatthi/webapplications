@@ -1,0 +1,41 @@
+ District EoDB
+
+URL: http://125.17.121.166:8080/DistrictEoDB/Login.aspx
+
+                User Name: COI-AP
+
+                Password: 1qaz!QAZ
+
+
+3tgusqfzuay2nldr0fih5ojy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+improper error handling
+clear text submission of password
+insufficent anti automation
+
+
+
+password with auto complete on enabled
+SRI not implemented
+csp header not set
+Hsts not implemented
+
+
+
+

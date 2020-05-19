@@ -1,0 +1,16 @@
+http://www.apcce.gov.in
+
+
+
+
+
+version disclosure
+click jacking
+Sql Injection
+	http://www.apcce.gov.in/tisslogin.aspx(admin ' or' 1 '= ' 1)
+insufficent anti automation
+stack trace error
+email id disclosure
+	http://www.apcce.gov.in/jkccontact.aspx
+	http://www.apcce.gov.in/newwebsite30122010/Contactus.aspx
+Unencrypted View State

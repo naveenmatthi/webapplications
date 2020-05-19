@@ -1,0 +1,54 @@
+http://36.255.252.196/testenv/sem_n/login 
+http://36.255.252.196/testenv/schemes_portal/
+
+
+		open issues
+
+sql injection
+server and php version disclosure(Version Disclosure)
+directory listing
+Sensitive information submitted in GET method
+concurrent logins possible
+last login time not implemented
+auto complete = off not enable
+Private IP disclosed
+jquery outdated website
+Sensitive Information Disclosure 
+weak password policy
+Broken Access Control
+email id disclosure
+csrf
+privillage escalation
+improper error handling
+clickjacking
+cors misconfiguration
+tRACE METHOD ALLOWED
+php error
+
+
+		closed issues
+
+
+html injection
+insufficent anti automation
+fileupload
+session fixiation
+client side bypass
+//Cleartext Submission of Credentials
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

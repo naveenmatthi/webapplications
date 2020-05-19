@@ -1,0 +1,15 @@
+APPSC UAT URL: https://uat-psc.aponline.gov.in:8080/ 
+
+
+
+User Credentials:
+
+AP1000301020    1qaz@WSX
+AP1001076261    Appsc@123
+
+
+
+
+
+
+https://uat-psc.aponline.gov.in:8080/(S(zg0r2a1rcgdkp5jwjeebmgjj))/UI/Reprints/PrintDirectRecruitmentOTPRReceipt.aspx?Flag=kNhoJuh5EWr84dgfw45Qog==

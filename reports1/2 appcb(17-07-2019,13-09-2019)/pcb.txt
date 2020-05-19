@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+Directory listing
+	https://pcb.ap.gov.in/appcbea/pcbea/css/
+version disclosure
+	microsoft/iis/8.5
+insufficent anti automtion\
+	https://pcb.ap.gov.in/FeedBack_New.aspx
+	https://pcb.ap.gov.in/AppointmentMS.aspx
+	https://pcb.ap.gov.in/appcbea/pcbea/login.aspx
+	https://pcb.ap.gov.in/appcbea/pcbea/home/contact_us.aspx
+un encrypted view state
+email id disclosure
+	https://pcb.ap.gov.in/appcbea/pcbea/home/contact_us.aspx
+	https://pcb.ap.gov.in/contact-us.html

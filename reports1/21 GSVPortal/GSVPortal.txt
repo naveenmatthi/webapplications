@@ -1,0 +1,43 @@
+http://navaratnalu-uat.ap.gov.in/GSVPortal_Audit/login/SignIn.aspx 
+
+
+
+
+Uerids:
+u: ANA-ANA-OPR-1
+P: aponline
+
+u: ANA-ANA-MRO-1
+p: KOHINOOR
+
+
+
+
+
+
+reports-->grama shaba reports
+
+
+
+
+senstive information disclosure
+session fixation------------------>improper session managment
+broken access control
+
+
+Asp.net default pages
+	http://navaratnalu-uat.ap.gov.in/GSVPortal_Audit/Account/Login.aspx
+host header injection
+back button
+
+
+insecure connection
+SRI not implemented
+outdated jquery version
+
+
+
+aadhar validation bypass
+//autocomplete onn enabled
+
+

@@ -1,0 +1,22 @@
+ap_bpcl -- 123
+ap_dydir -- 123
+dso_06   -- 123
+ mpdo_0622
+
+
+
+
+
+concurrent logins
+version disclosure
+csrf
+Sql injection
+clickjacking
+HTTP only flag not set
+
+
+
+
+LPG-2361381
+lpg_31223
+

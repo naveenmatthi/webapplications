@@ -1,0 +1,37 @@
+Test url for RSMS web application : http://test.cgg.gov.in/cadarsmsap/Login.do
+
+User: nsp
+Password: nsp
+
+
+User: guest
+Password: guest
+
+
+
+Vunlerabilites
+
+1.CSRF
+2.ClickJacking
+3.Password field with autocomplete enabled
+4.insufficent anti automation
+5.WeakPassword Policy
+6.Trace Method enabled
+
+
+
+
+
+
+
+
+http://test.cgg.gov.in/cadarsmsap/reservoir.do
+http://test.cgg.gov.in/cadarsmsap/dailyreport.do
+http://test.cgg.gov.in/cadarsmsap/detailedReport.do
+
+
+Nodata
+http://test.cgg.gov.in/cadarsmsap/fusionChartsReport.do
+http://test.cgg.gov.in/cadarsmsap/barragesReport.do
+
+

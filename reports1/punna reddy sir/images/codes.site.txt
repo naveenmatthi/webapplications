@@ -1,0 +1,82 @@
+https://www.codes.ap.gov.in/
+
+
+https://embed.plnkr.co/0VPU1zmmWC5wmTKPKnhg/
+
+Admin_Suresh
+Goud@goud
+
+
+
+function log(pass) {
+
+                var key = CryptoJS.enc.Utf8.parse('dWcHYnn8jrb6mswS');
+                var iv = CryptoJS.enc.Utf8.parse('dWcHYnn8jrb6mswS');
+                var encryptedpassword = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(pass), key,
+                 {
+                     keySize: 128 / 8,
+                     iv: iv,
+                     mode: CryptoJS.mode.CBC,
+                     padding: CryptoJS.pad.Pkcs7
+                 });
+                $('#Password').val(encryptedpassword);
+                return encryptedpassword;
+            }
+
+           
+            getUserIP(function (ip) {
+                $("#info").html(ip)
+            });
+
+// Code goes here
+// Code goes here
+var keySize = 256;
+var ivSize = 128;
+var iterations = 100;
+
+var message = "123456";
+//var password = "123456";
+
+function encrypt (msg, pass) {
+  
+  
+  /*var key = CryptoJS.enc.Utf8.parse('dWcHYnn8jrb6mswS');
+
+  var iv = CryptoJS.enc.Utf8.parse('dWcHYnn8jrb6mswS');
+  
+  var encrypted = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(pass), key, { 
+    keySize: 128 / 8,
+    iv: iv, 
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+    
+  });
+  $('#Password').val(encrypted);
+  // salt, iv will be hex 32 in length
+  // append them to the ciphertext for use  in decryption*/
+  var encrypted="M2t9bkyB2J0hkLsRt7gPxg==";
+  var transitmessage = encrypted.toString();
+  return transitmessage;
+}
+
+function decrypt (transitmessage) {
+  var key = CryptoJS.enc.Utf8.parse('dWcHYnn8jrb6mswS');
+
+  var iv = CryptoJS.enc.Utf8.parse('dWcHYnn8jrb6mswS');
+  //var encrypted= transitmessage;
+  
+  var decrypted = CryptoJS.AES.decrypt(encrypted, key, { 
+    keySize: 128 / 8,
+    iv: iv, 
+    mode: CryptoJS.mode.CBC,
+    padding: CryptoJS.pad.Pkcs7
+    
+  })
+  return decrypted;
+}
+
+var encrypted = encrypt(message);
+var decrypted = decrypt(encrypted);
+
+$('#encrypted').text("Encrypted: "+encrypted);
+$('#decrypted').text("Decrypted: "+ decrypted.toString(CryptoJS.enc.Utf8) );

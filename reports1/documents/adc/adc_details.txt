@@ -1,0 +1,142 @@
+Dear Sir,
+
+Please find the attachment as per your requirement.
+
+Website url : http://www.adcl.in
+
+Test environment domain url's : http://uat.adcl.in/
+
+1. Access to Application requested from APTS 
+
+IP : 103.211.111.117 & 103.211.111.118          ------------->  Yes
+
+2. Test Environment [UAT/Production] :
+
+   for UAT :  http://uat.adcl.in/  
+
+   for Production : http://dev.adcl.in/
+
+3.Test Credentials  for UAT  :
+
+UserName :     Admin
+
+Password  :    AdclUat@2016
+
+4,Type of Application :  API
+
+5. Hashfile (SHA512) of Zipped Source Code :  is Generated But Source Code 
+
+Size is around 8.7 GB 
+
+6. Sample request and Response :
+
+1. GET Request
+
+Type       :    GET 
+
+Url          :      http://uatapi.adcl.in/api/GetRoles
+
+headers  :   { 'Content-Type': 'application/json' }
+
+Response  :
+
+Reponse Code  : 200 Ok  
+
+{
+    "data": [
+        {
+            "RoleID": 2,
+            "RoleName": "Contracter",
+            "ApprovalStatus": 3,
+            "CreatedOn": "2018-10-09T11:44:32.487",
+            "Status": true,
+            "Users": null
+        },
+        {
+            "RoleID": 3,
+            "RoleName": "PMC",
+            "ApprovalStatus": 2,
+            "CreatedOn": "2018-10-09T11:44:32.487",
+            "Status": true,
+            "Users": null
+        },
+        {
+            "RoleID": 4,
+            "RoleName": "SiteEngineer",
+            "ApprovalStatus": 1,
+            "CreatedOn": "2018-10-09T11:44:32.487",
+            "Status": true,
+            "Users": null
+        }
+    ],
+    "error": null
+}
+
+2. Post Request
+
+Type    : POST
+
+Url:         http://uatapi.adcl.in/api/SaveUser
+
+headers  :   { 'Content-Type': 'application/json' }  
+
+Body :
+
+{                    
+                      "UserID": 1,
+                      "Name": "test",
+                      "MobileNumber": "9999999999",
+                      "UserName": "tester",
+                      "Password": "admin",
+                      "RoleID": 1,
+                      "PackageIDs": "1,2,3",
+                      "RoadIDs": "1,2"
+  }
+
+Response :
+
+Reponse Code  : 200 Ok
+
+{
+    "data": 
+        {
+               "UserID": 1,
+                      "Name": "test",
+                      "MobileNumber": "9999999999",
+                      "UserName": "tester",
+                      "Password": "admin",
+                      "RoleID": 1,
+                      "PackageIDs": "1,2,3",
+                      "RoadIDs": "1,2"  
+        },
+                    "error": null
+}  
+
+
+Thanks & Regards
+
+G.Siva Sagar
+
+IT-Executive,
+
+Amaravati Development Corporation Ltd.,
+D.No:20-4-15,Flot No: 1G,Anand Heights,
+Beside Prabhas College,Kedareswarapet,
+Vijayawada-520003.
+Ph:9866348024,7095599566.
+
+Main Office   : 0866-2534575.
+
+
+
+
+
+
+
+
+
+
+privillage escalation
+version disclosure
+password are displaying in plain text
+

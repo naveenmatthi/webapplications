@@ -1,0 +1,47 @@
+URL:
+http://13.127.44.219/apdascac/
+
+
+Admin Credentials:
+URL: http://13.127.44.219/apdascac/login
+username: admin@apdascac.ap.gov.in
+Password: Admin@54321
+
+AD Credentials:
+URL: http://13.127.44.219/apdascac/login
+username: acc2.kurnool@apdascac.org
+Password: acc@kurnool
+
+
+User Credentials:
+URL: http://13.127.44.219/apdascac/User/login
+username: seshubasa@gmail.com
+Password: seshu@54321
+
+
+
+
+
+jamieson.thiago@ldaho.biz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+http://teluguuniversity.ac.in/
+
+
+insufficent anti automation
+version disclosure
+info.php file available to public
+vunlerable jquery version
+WordPress XML-RPC authentication brute force 
+clickjacking
+wordpress login page available for public
+

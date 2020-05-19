@@ -1,0 +1,93 @@
+MSME Tracker
+
+http://125.17.121.166:8080/MSMETracker/
+User Name: MSME-ED
+Password: 12345
+
+
+
+
+
+
+Revalidate Enumerator Tagged Units exception
+
+-----------------------------------------------------sqlinjection----------------
+
+
+
+
+forcefull browsing-----broken access control
+
+
+session fixation
+unencrypted View state
+user credentials are sent in plain text--------------
+insufficent anti automation-------------
+concurrent logins
+Weak password policy
+Host Header injection 
+last login time not implemented
+improper error handling ------
+
+
+
+password with auto complete on enabled-----------
+csp headers ----------------
+clickjacking
+version disclosure--------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+msme tracker
+
+http://125.17.121.166:8080/MSMETracker/UserAccount/Enumerator_ReTagging_ByGM.aspx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

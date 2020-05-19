@@ -1,0 +1,32 @@
+http://13.233.40.63
+
+
+
+
+insufficent anti automation		Medium
+
+server version disclosure		Low
+email id diclosure			Low
+vunlerable java script 		Low
+--------------------------------------------------------------------sri not implemented		Low------------------------------------------------------
+csp not implemented		Low
+unwanted HTTP methods enabled	Low
+
+
+
+
+
+
+
+
+http://13.233.40.63/
+http://13.233.40.63/images
+http://13.233.40.63/images/anchorage
+http://13.233.40.63/images/anchorage/DSC_1_tn.jpg
+http://13.233.40.63/images/maps
+http://13.233.40.63/images/maps/industrial-corridor_tn.jpg
+http://13.233.40.63/js
+http://13.233.40.63/js/app.min.js
+http://13.233.40.63/js/templates.min.js
+http://13.233.40.63/js/vendor.min.js
+

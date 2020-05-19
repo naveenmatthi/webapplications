@@ -1,0 +1,12 @@
+
+version disclosure
+
+
+
+stack trace error
+
+
+
+clickjacking
+
+vunlerable jquer version

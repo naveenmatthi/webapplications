@@ -1,0 +1,9 @@
+http://10.72.5.78:8080/Grievance/
+PMU - pmu
+mro_0605 - 123
+dso_06 - 123
+FOOD_COMM - 123
+Legal_Metr - 123
+Cons_Redresal - 123
+dgro_06 -  123
+chairman - 123

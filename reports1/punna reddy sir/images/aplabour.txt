@@ -1,0 +1,8 @@
+sqlinjection
+directory listing
+ceredentials are passing in plain text
+version disclosure
+emailid disclosure\
+ssl not implemented
+
+improper anti automation

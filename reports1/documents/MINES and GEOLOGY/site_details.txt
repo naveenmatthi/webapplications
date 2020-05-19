@@ -1,0 +1,27 @@
+https://www.mines.ap.gov.in/Permit/UserInterface/ePassLogin.aspx
+
+
+
+Login Credentials
+
+Username: C0181900069
+ADC_CRDA
+Password: Test@123
+
+
+
+
+Service Request
+Contractor Generate Transit Pass- Calculation
+Contractor Stationary Request-Payment
+Contractor Request for PrePass-Request
+
+
+
+improper session managment
+clickjacking
+improper error handling
+version disclosure
+session timeout
+concurrent logins
+client side logic bypass

@@ -1,0 +1,23 @@
+Share to Naveen
+
+
+
+
+
+Website Url :  http://36.255.252.196/epantakharif/login
+
+username :  test_login
+Password  :  password@test123
+
+POC  :  7981623150 ( durgarao Y. )
+
+
+
+
+
+directory listing
+improper session managment
+last login time 
+Password input field with auto-complete enabled
+concurrent logins
+

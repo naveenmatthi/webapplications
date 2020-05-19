@@ -1,0 +1,105 @@
+http://10.72.5.78:8080/Grievance/
+PMU - pmu
+mro_0605 - 123
+dso_06 - 123
+FOOD_COMM - 123
+Legal_Metr - 123
+Cons_Redresal - 123
+dgro_06 -  123
+chairman - 123
+deo_0632 - 123
+
+
+
+1863
+1869
+mro_0632
+
+
+
+
+
+
+version disclosure()
+stack trace error()
+concurrent logins()
+privillage escaliaton()
+clickjacking
+xss(</strong></td><script>alert(1)</script>)()
+	http://10.72.5.78:8080/Grievance/Chairman_MembersAbstractReport.jsp
+cross site request forgery()
+	http://10.72.5.78:8080/Grievance/progressformEntry_action
+outdated jquery version
+	view-source:http://code.jquery.com/jquery-latest.min.js
+default credentials
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://10.72.5.78:8080/Grievance/login_success.jsp
+http://10.72.5.78:8080/Grievance/GrievanceForm.jsp
+http://10.72.5.78:8080/Grievance/mrogrievance.jsp
+http://10.72.5.78:8080/Grievance/MrologinForwordGrievanceReport.jsp
+http://10.72.5.78:8080/Grievance/pmu_contacts.jsp
+
+
+pmz
+
+
+grievance
+http://10.72.5.78:8080/Grievance/GrievanceForm.jsp
+http://10.72.5.78:8080/Grievance/grievance_status_interface.jsp
+abstract
+http://10.72.5.78:8080/Grievance/Grievance_Abstract.jsp
+http://10.72.5.78:8080/Grievance/Nfsa_State_Abstarct.jsp
+http://10.72.5.78:8080/Grievance/pmu_abstract.jsp
+http://10.72.5.78:8080/Grievance/Dist_Abstract.jsp
+http://10.72.5.78:8080/Grievance/sms_report.jsp
+concat
+http://10.72.5.78:8080/Grievance/pmu_contacts.jsp
+
+
+
+
+dgro
+http://10.72.5.78:8080/Grievance/FoodcommissionDgroform.jsp
+http://10.72.5.78:8080/Grievance/Districts_dgro_report.jsp
+
+
+chairman
+http://10.72.5.78:8080/Grievance/ChairmanandMemberEntryForm.jsp
+http://10.72.5.78:8080/Grievance/Chairman_MembersAbstractReport.jsp
+
+
+Cons_Redresal
+
+http://10.72.5.78:8080/Grievance/FoodCommiossionParticulars_EntryForm.jsp
+http://10.72.5.78:8080/Grievance/Districtwise_Particulars_EntryForm.jsp
+http://10.72.5.78:8080/Grievance/ParticularsAbstarctReport.jsp
+http://10.72.5.78:8080/Grievance/Districtwiseparticulars_EntryReport.jsp
+
+
+Legal_Metr
+http://10.72.5.78:8080/Grievance/ProgressForm.jsp
+http://10.72.5.78:8080/Grievance/TradesEntryForm.jsp
+http://10.72.5.78:8080/Grievance/ProgreesAbstractreport.jsp
+http://10.72.5.78:8080/Grievance/TradesAbstractreport.jsp
+
+
+

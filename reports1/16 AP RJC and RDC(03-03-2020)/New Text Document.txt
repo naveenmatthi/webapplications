@@ -1,0 +1,30 @@
+
+host header injection
+
+
+
+captch reusable
+
+	https://test.apcfss.in/APRDCAPP2020/aprdcapplication030220201153.aprjdc
+
+
+
+stack trace error
+	
+
+version disclosure
+
+
+
+
+vunlerable jquery version
+
+	https://test.apcfss.in/APRDCAPP2020/jQuery/jquery-1.10.1.js
+	https://test.apcfss.in/APRDCAPP2020/jQuery/jquery-ui.js
+	
+
+
+clickjacking
+
+
+	

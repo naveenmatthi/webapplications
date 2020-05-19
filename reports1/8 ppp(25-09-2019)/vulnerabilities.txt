@@ -1,0 +1,23 @@
+HIGH--------------------------------------------------------
+Fileupload shell		done
+CSRF				done
+Medium------------------------------------------------------
+INSUFFICIENT ANTIAUTOMATION	done    done
+No Account Lockout Policy	done    done
+User Credentials are in cleartextdone   done
+Last Login time			done    done
+Password Policy			done
+Unencrypted view state		done			
+Concurrent Logins		done
+session fixation		done
+Security Headers		done
+Low----------------------------------------------------------
+Technology version		done    done
+jquery				done    done
+Clickjacking			done    done
+Autocomplete off		done    done
+Email address			done    done
+
+
+
+

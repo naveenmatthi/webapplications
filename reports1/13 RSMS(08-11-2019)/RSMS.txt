@@ -1,0 +1,77 @@
+Test url for RSMS web application : http://test.cgg.gov.in/cadarsmsap/Login.do
+
+User: nsp
+Password: nsp
+
+
+User: guest
+Password: guest
+
+
+
+Vunlersbilites
+1.Cross Site Request Forgery(CSRF)		High
+2.Sql Injection				High
+ 
+3.Weak password policy			Medium
+4.Concurrent Logins Possible		Medium
+5.Username enmuration			Medium
+6.Unencrypted connection			Medium
+7.Security Headers Missing			Medium
+
+8.credentials are submiting using Get Method   Low
+9.Insufficient Anti Automation		Low
+10.Password field with auto complete enabled	Low	
+11.Vulnerable HTTP  Trace Method enabled	Low
+12.Clickjacking				Low
+13.Cookie(s) Not Marked as Http Only		low	
+14.Last Login time not implemented		low
+15.Browser cache weakness			low
+                                                                  
+CT20162039682
+
+
+
+
+
+
+
+
+
+
+
+
+
+Payload1		Patload2		Value	
+1		 99		c	  
+2		 97		a
+3		 100		d
+4		 97		a
+5		 114		r
+6		 115		s
+7		 109		m
+8		 115		s
+9		 97		a
+10		 112		p
+
+Database Name:cadarsmsap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

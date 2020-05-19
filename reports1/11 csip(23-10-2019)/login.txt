@@ -1,0 +1,23 @@
+http://hmfw.ap.gov.in/csip_test/(S(gwcvs2d4vz0sllcux3w5enm4))/csilogin.aspx
+Name: Ravi.khandavilly	
+Designation: Developer	
+UserId:- gdc.vjy.ms
+Mail id: ravi.khandavilly@gmail.com
+Password:- test123
+
+
+/
+/CSIAttachmentLoader.aspx
+/CSIGlobalRegPersonal.aspx
+/CSIIndianApplicationView.aspx
+/csilogin.aspx
+/CSIRegistrationLaunch.aspx
+/Default.aspx
+/FacilityAdminView.aspx
+/FacilityServicePreferencesReportView.aspx
+/Handler.ashx
+/script
+/script/datetimepicker_css.js
+/SpecialistsCatalogView.aspx
+/SpecialistsPendingAccreditionView.aspx
+/ViewAttachments.aspx

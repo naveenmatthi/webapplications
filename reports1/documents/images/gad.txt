@@ -1,0 +1,7 @@
+www.uat.reports.ap.gov.in
+
+
+
+clickjacking
+version disclosure
+older jquery version
