@@ -1,6 +1,0 @@
-Is device rooted or not
-
-check files & folders & libraries
-check the superuser application in /system/app
-check the build keys
-cat system/build.prop | grep ro.build.tags
