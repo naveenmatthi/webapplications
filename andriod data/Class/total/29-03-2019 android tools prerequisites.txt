@@ -1,8 +1,0 @@
-apk tool	jdk latest version
-
-enjarify.jar	java
-
-jd-jui		java
-
-drozer		python 2.7
-
